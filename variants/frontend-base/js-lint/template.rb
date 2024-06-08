@@ -19,8 +19,8 @@ update_package_json do |package_json|
   package_json["prettier"] = "prettier-config-ackama"
   package_json["browserslist"] = ["defaults"]
   package_json["scripts"] = {
-    "js-lint" => "eslint . --ignore-pattern '!.eslintrc.js' --ext js,ts,tsx,jsx",
-    "js-lint-fix" => "eslint . --ignore-pattern '!.eslintrc.js' --ext js,ts,tsx,jsx --fix",
+    "js-lint" => "eslint . --ext js,ts,tsx,jsx",
+    "js-lint-fix" => "eslint . --ext js,ts,tsx,jsx --fix",
     "format-check" => "prettier --check .",
     "format-fix" => "prettier --write .",
     "scss-lint" => "stylelint '**/*.{css,scss}'",
