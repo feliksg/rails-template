@@ -206,7 +206,7 @@ def apply_template! # rubocop:disable Metrics/MethodLength, Metrics/AbcSize, Met
     apply_readme_template
 
     # Run prettier one last time to ensure that everything is formatted
-    apply_prettier_all_over
+    # apply_prettier_all_over
   end
 end
 
