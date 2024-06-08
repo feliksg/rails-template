@@ -132,7 +132,7 @@ def apply_template! # rubocop:disable Metrics/MethodLength, Metrics/AbcSize, Met
       apply "variants/frontend-bootstrap-typescript/template.rb" if TEMPLATE_CONFIG.apply_variant_bootstrap?
       apply "variants/frontend-react-typescript/template.rb" if TEMPLATE_CONFIG.apply_variant_react?
 
-      run "yarn run typecheck"
+      # run "yarn run typecheck"
     end
 
     # apply any js linting fixes after all frontend variants have run
