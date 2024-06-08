@@ -387,6 +387,8 @@ def gsub_file!(path, flag, *args, &block)
   gsub_file(path, flag, *args, &block)
 
   raise StandardError, "the contents of #{path} did not change!" if content == File.binread(path)
+rescue StandardError => e
+  pp e
 end
 
 apply_template!
