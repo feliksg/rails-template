@@ -136,7 +136,7 @@ def apply_template! # rubocop:disable Metrics/MethodLength, Metrics/AbcSize, Met
     end
 
     # apply any js linting fixes after all frontend variants have run
-    run "yarn run js-lint-fix"
+    # run "yarn run js-lint-fix"
 
     create_initial_migration
 
