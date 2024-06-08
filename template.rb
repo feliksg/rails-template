@@ -265,7 +265,7 @@ def cleanup_package_json
   run "npx -y sort-package-json"
 
   # ensure the yarn.lock is up to date with any changes we've made to package.json
-  run "yarn install"
+  # run "yarn install"
 end
 
 # Adds the given <code>packages</code> as dependencies using <code>yarn add</code>
